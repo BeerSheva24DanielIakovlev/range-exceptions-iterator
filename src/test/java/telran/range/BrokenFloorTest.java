@@ -8,7 +8,7 @@ public class BrokenFloorTest {
 
     private int getMinimalBrokenFloor(BallBrokenFloor bbf) {
         int min = 1;
-        int max = bbf.getMinBrokenFloor();
+        int max = Integer.MAX_VALUE;
         int result = -1;
     
         while (min <= max) {
