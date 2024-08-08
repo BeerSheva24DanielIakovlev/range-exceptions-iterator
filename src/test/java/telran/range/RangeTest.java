@@ -20,8 +20,7 @@ public class RangeTest {
         range.checkNumber(55);
     }
     void wrongNumberTest() throws Exception {
-        assertThrowsExactly(OutOfRangeMaxValueException.class,
-         () -> range.checkNumber(MAX + 1));
-         assertThrowsExactly(OutOfRangeMinValueException.class, () -> range.checkNumber(MIN - 1));
+        assertThrowsExactly(OutOfRangeMaxValueException.class, () -> range.checkNumber(MAX + 1));
+        assertThrowsExactly(OutOfRangeMinValueException.class, () -> range.checkNumber(MIN - 1));
     }
 }

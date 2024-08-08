@@ -21,4 +21,5 @@ public class BallBrokenFloor {
         //used only for testing purposes
         return minBrokenFloor;
     }
+
 }
